@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-514k_)cu01-6zvn0-j^4nnp)9-mwx3l6-)^i(7$e77(c-#u68c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','*.vercel.app']
+ALLOWED_HOSTS = ['127.0.0.1','.vercel.app']
 
 
 # Application definition
@@ -82,19 +82,19 @@ DATABASES = {
     #     default='postgres://djangodb_xr38_user:p4j4Jszq6W0gnDZcpzUOnFANDYiaah8y@dpg-cjt180thtt0c73blejc0-a.oregon-postgres.render.com/djangodb_xr38',
     #     conn_max_age=600
     # )
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.postgresql',
-    #     'NAME': 'djangodb_xr38',
-    #     'USER': 'djangodb_xr38_user',
-    #     'PASSWORD': 'p4j4Jszq6W0gnDZcpzUOnFANDYiaah8y',
-    #     'HOST': 'dpg-cjt180thtt0c73blejc0-a.oregon-postgres.render.com',
-    #     'PORT': '',
-    # }
-
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'djangodb_xr38',
+        'USER': 'djangodb_xr38_user',
+        'PASSWORD': 'p4j4Jszq6W0gnDZcpzUOnFANDYiaah8y',
+        'HOST': 'dpg-cjt180thtt0c73blejc0-a.oregon-postgres.render.com',
+        'PORT': '5432',
     }
+
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # }
 }
 
 
