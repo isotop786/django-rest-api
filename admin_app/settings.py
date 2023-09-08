@@ -77,24 +77,16 @@ WSGI_APPLICATION = 'admin_app.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    # 'default': dj_database_url.config(
-    #     # Feel free to alter this value to suit your needs.
-    #     default='postgres://djangodb_xr38_user:p4j4Jszq6W0gnDZcpzUOnFANDYiaah8y@dpg-cjt180thtt0c73blejc0-a.oregon-postgres.render.com/djangodb_xr38',
-    #     conn_max_age=600
-    # )
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.postgresql',
-    #     'NAME': 'djangodb_xr38',
-    #     'USER': 'djangodb_xr38_user',
-    #     'PASSWORD': 'p4j4Jszq6W0gnDZcpzUOnFANDYiaah8y',
-    #     'HOST': 'dpg-cjt180thtt0c73blejc0-a.oregon-postgres.render.com',
-    #     'PORT': '5432',
-    # }
-
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'djangodb_xr38',
+        'USER': 'djangodb_xr38_user',
+        'PASSWORD': 'p4j4Jszq6W0gnDZcpzUOnFANDYiaah8y',
+        'HOST': 'dpg-cjt180thtt0c73blejc0-a.oregon-postgres.render.com',
+        'PORT': '5432',
     }
+
+    
 }
 
 
